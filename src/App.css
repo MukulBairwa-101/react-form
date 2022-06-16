@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&family=Poppins&display=swap');
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --btn-primary:#7534c9;
+    --btn-secondary:#1C8D73;
+    --body-clr:#f7f5f5;
+    --input-focus:#699e92;
+}
+body{
+    /* background-color:var(--body-clr); */
+}
+.flex{
+    display:flex;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content:center;
+}
+a{
+    text-decoration: none;
+    color:gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* buttons */
+.btn{
+    border-radius:5px;
+    border:none;
+    outline:none;
+    padding:10px 30px;
+    margin:2px 5px;
+    cursor: pointer;
+    font-weight: 500;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-auth {
+    font-size:12px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-register{
+    background-color: var(--btn-primary);
+    color:#fff;
+    
+    
+}
+.btn-teal{
+    color:#fff;
+    background-color:var(--btn-secondary );
+}
+.btn-login-link{
+    font-size: 13px;
+    margin:0px 10px;
+
+}
+.btn-login-link:hover{
+    border-bottom:.1px solid var(--btn-primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* custom css */
+    nav{
+        justify-content:center;
+        align-items: center;
+        background-color:rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(221, 221, 221);
+        padding:20px 80px;
+        
+    }
+    .logo{
+        color: rgb(109, 109, 109);
+        font-size:20px;
+        font-weight:bold;
+        font-family: 'Poppins';
+        
+    }
+
+    /* forms */
+    .auth-container{
+        background-color:#fff;
+        margin:40px auto;
+        max-width: 500px;
+        border-radius:8px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    .form-left-div{
+        background-color:teal;
+        padding:80px;
+        flex:.6;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border-radius:8px 0px 0px 8px;
+    }
+    .form-container{
+        margin:5px;
+        background-color:var(--body-clr);
+        padding:20px;
+        border-radius:10px;
+        
+    }
+    .form-input-wrapper{
+        /* justify-content:center; */
+        align-items:center;
+        background-color:#fff;
+        margin:10px;
+        padding:5px 10px;
+        
+    }
+    .form-input-wrapper *{
+        margin:5px 0px;
+        
+    }
+    .form-input{
+        max-width: 700px;
+        padding:10px;
+        border:none;
+        width:300px;
+        outline:none;
+    }
+    /* .form-input-wrapper:focus{
+        outline-color: var(--input-focus);
+    } */
+    .auth-change-div{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .validate-error{
+        color:firebrick;
+        font-weight:400;
+        font-size:13px;
+    }
+    .form-heaad{
+        color:gray;
+        font-family: 'Poppins';
+        
+    }
+    .input-icon{
+        color:var(--btn-secondary);
+    }
+
+    /* forms */
+
+
+
+/* custom css */
